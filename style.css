@@ -1,0 +1,92 @@
+/* Main styles */
+html, body, [class*="css"] {
+    font-family: 'Courier New', monospace;
+    color: #000000;
+    background-color: white;
+}
+
+/* Sidebar */
+.css-1d391kg, .css-1oe5cao {
+    background-color: white !important;
+    border-right: 1px solid black;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.stButton>button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.stButton>button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Input fields */
+.stTextInput>div>div>input, .stTextArea>div>div>textarea {
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+}
+
+/* Expander */
+.stExpander {
+    border: 2px solid black !important;
+    margin-bottom: 1rem;
+}
+
+.stExpander .st-emotion-cache-1hynsf2 {
+    background-color: white !important;
+}
+
+/* Terminal simulation */
+.stTextInput>div>div>input {
+    font-family: 'Courier New', monospace;
+    background-color: black !important;
+    color: white !important;
+}
+
+/* Tables */
+.stDataFrame {
+    border: 2px solid black !important;
+}
+
+/* Code blocks */
+.stCodeBlock pre {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0 !important;
+    border: 2px solid black !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: white !important;
+    border: 2px solid black !important;
+    border-bottom: none !important;
+    border-radius: 0 !important;
+    margin-right: 0 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: black !important;
+    color: white !important;
+}
+
