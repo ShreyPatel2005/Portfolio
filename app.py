@@ -357,23 +357,19 @@ def main():
                 st.markdown("""
                 <div class="tech-stack" style="width: fit-content">
                     <span class="tech-item">
-                        <img src="{python}" style="height: 20px;"> Python
-                    </span>
-                    <span class="tech-item">
-                        <img src="{tensorflow}" style="height: 20px;"> TensorFlow
-                    </span>
-                    <span class="tech-item">
-                        <img src="{flask}" style="height: 20px;"> Flask
+                        <img src="{react}" style="height: 20px;"> React
                     </span>
                     <span class="tech-item">
                         <img src="{mongodb}" style="height: 20px;"> MongoDB
                     </span>
+                    <span class="tech-item">
+                        <img src="{nodejs}" style="height: 20px;"> NodeJS
+                    </span>
                 </div>
                 """.format(
-                    python=tech_icons["Python"],
-                    tensorflow=tech_icons["TensorFlow"],
-                    flask=tech_icons["Flask"],
-                    mongodb=tech_icons["MongoDB"]
+                    react=tech_icons["React"],
+                    mongodb=tech_icons["MongoDB"],
+                    nodejs=tech_icons["NodeJS"],
                 ), unsafe_allow_html=True)
                 
                 st.button("View Code", key="project2")
