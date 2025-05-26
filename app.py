@@ -230,7 +230,7 @@ def main():
             **Currently working on:**
             - AI-powered analytics platform
             - Automated data pipelines
-            - Real-time recommendation systems
+            - Ecommerce Platform
             """)
         st.markdown('</div>', unsafe_allow_html=True)
         
