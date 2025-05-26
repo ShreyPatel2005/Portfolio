@@ -148,7 +148,8 @@ tech_icons = {
     "AWS": "https://img.icons8.com/color/84/amazon-web-services.png",
     "React": "https://img.icons8.com/color/84/react-native.png",
     "Docker": "https://img.icons8.com/color/84/docker.png",
-    "Git": "https://img.icons8.com/color/84/git.png"
+    "Git": "https://img.icons8.com/color/84/git.png",
+    "NodeJS": "https://img.icons8.com/color/84/nodejs.png"
 }
 
 # Navigation with icons
@@ -158,13 +159,13 @@ def navigation():
         st.markdown(f"""
         <div class="profile-container">
             <img src="data:image/png;base64,{profile_img_base64}" class="profile-img">
-            <h3>Shrey Patel</h3>
-            <p>Data Scientist | Developer</p>
+            <h2>Shrey Patel</h2>
+            <p>Developer | Data Scientist</p>
             <div style="display: flex; gap: 15px; justify-content: center;">
-                <a href="https://linkedin.com" target="_blank">
+                <a href="https://www.linkedin.com/in/shrey-patel-68597325b/" target="_blank">
                     <img src="https://img.icons8.com/color/64/linkedin.png" class="social-icon">
                 </a>
-                <a href="https://github.com" target="_blank">
+                <a href="https://github.com/Shrey131005" target="_blank">
                     <img src="https://img.icons8.com/color/64/github.png" class="social-icon">
                 </a>
             </div>
@@ -183,7 +184,7 @@ def navigation():
             st.download_button(
                 label="📄 Download Resume",
                 data=resume_data,
-                file_name="John_Doe_Resume.pdf",
+                file_name="Shrey Patel_Resume.pdf",
                 mime="application/pdf",
                 use_container_width=True
             )
@@ -191,9 +192,9 @@ def navigation():
         st.markdown("### 🚀 Currently Learning", unsafe_allow_html=True)
         st.markdown("""
         <ul style='list-style: none; padding-left: 0; text-align: left; display: inline-block;'>
-            <li>🧠 LangChain</li>
+            <li>🧠 Machine Learning</li>
             <li>🔐 OAuth 2.0</li>
-            <li>📦 Docker Swarm</li>
+            <li>📦 Docker </li>
         </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -208,8 +209,8 @@ def main():
     with st.container():
         # Home Section
         st.markdown('<div id="home" class="section">', unsafe_allow_html=True)
-        st.title("Hi, I'm Shrey Patel")
-        st.subheader("Data Scientist & Full Stack Developer")
+        st.title("Hi, I'm Shrey Patel !")
+        st.subheader("Full Stack Developer & Data Scientist")
         st.write("""
         I build intelligent systems that solve real-world problems through 
         data-driven approaches and elegant engineering solutions.
@@ -229,7 +230,7 @@ def main():
             st.markdown("""
             **Currently working on:**
             - AI-powered analytics platform
-            - Automated data pipelines
+            - GIS Land Use Classification
             - Ecommerce Platform
             """)
         st.markdown('</div>', unsafe_allow_html=True)
@@ -241,23 +242,22 @@ def main():
         with st.container():
             st.subheader("🎓 Education")
             st.info("""
-            - **MSc Computer Science** – XYZ University (2020)
-            - **BSc Data Science** – ABC College (2018)
+            - **12th**  Gnyan Dham School (2023)
+            - **10th**  Gnyan Dham School (2021)
             """)
 
         with st.container():
             st.subheader("💼 Experience")
             st.success("""
-            - **Senior Data Scientist** at TechCorp (2021–Present)
-            - **ML Engineer** at DataWorks (2019–2021)
+            - **Event Management** at IEEE SB PDEU (2025–Present)
+            - **Tech Core** at SnT PDEU (2024–Present)
             """)
 
-        with st.container():
-            st.subheader("🏆 Achievements")
-            st.warning("""
-            - **Best AI Project 2022** – Tech Innovation Awards
-            - **Top 10 Under 30** – Data Science 2023
-            """)
+        # with st.container():
+        #     st.subheader("🏆 Achievements")
+        #     st.warning("""
+        #     - Comming Soon...
+        #     """)
 
         st.markdown('</div>', unsafe_allow_html=True)
         
@@ -276,6 +276,7 @@ def main():
                 <img src="{sql}" class="skill-logo">
                 <img src="{aws}" class="skill-logo">
                 <img src="{react}" class="skill-logo">
+                <img src="{nodejs}" class="skill-logo">
                 <img src="{docker}" class="skill-logo">
                 <img src="{git}" class="skill-logo">
                 <img src="{pandas}" class="skill-logo">
@@ -298,39 +299,45 @@ def main():
             sql=tech_icons["SQL"],
             aws=tech_icons["AWS"],
             react=tech_icons["React"],
+            nodejs=tech_icons["NodeJS"],
             docker=tech_icons["Docker"],
             git=tech_icons["Git"]
         ), unsafe_allow_html=True)
         
         st.markdown('</div>', unsafe_allow_html=True)
+        st.divider()
         
         # Projects Section
         st.markdown('<div id="projects" class="section">', unsafe_allow_html=True)
         st.header("Featured Projects")
-        
+        st.header("")
         with st.container():
             col1, col2 = st.columns([1, 2])
             with col1:
                 st.image("assets/projects/project1.png", use_container_width=True)
             
             with col2:
-                st.subheader("AI-Powered Analytics Platform")
+                st.subheader("Shrivik Jewellery Ecommerce")
                 st.write("""
-                A comprehensive dashboard for business analytics powered by machine learning.
+                A fully Functional ecommerce platform for jewellery with user authentication, product management, and payment integration.
                 """)
                 
                 st.markdown("""
                 <div class="tech-stack" style="width: fit-content">
                     <span class="tech-item">
-                        <img src="{python}" style="height: 20px;"> Python
+                        <img src="{react}" style="height: 20px;"> React
                     </span>
                     <span class="tech-item">
-                        <img src="{streamlit}" style="height: 20px;"> Streamlit
+                        <img src="{mongodb}" style="height: 20px;"> MongoDB
+                    </span>
+                    <span class="tech-item">
+                        <img src="{nodejs}" style="height: 20px;"> NodeJS
                     </span>
                 </div>
                 """.format(
-                    python=tech_icons["Python"],
-                    streamlit=tech_icons["Streamlit"],
+                    react=tech_icons["React"],
+                    mongodb=tech_icons["MongoDB"],
+                    nodejs=tech_icons["NodeJS"],
                 ), unsafe_allow_html=True)
                 
                 st.button("View Code", key="project1")
@@ -340,9 +347,11 @@ def main():
         with st.container():
             col1, col2 = st.columns([2, 1])
             with col1:
-                st.subheader("E-commerce Recommendation System")
+                #add link to project
+                st.markdown("<h3><a href='https://horizonlab.tech' target='_blank' style='text-decoration: none; color: inherit;'>HorizonLab.tech</a></h3>", unsafe_allow_html=True)
+
                 st.write("""
-                Personalized product recommendations using collaborative filtering.
+                A Service Providing Platform for Web Development, App Development, and AI Solutions.
                 """)
                 
                 st.markdown("""
@@ -372,6 +381,7 @@ def main():
             with col2:
                 st.image("assets/projects/project2.png", use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
+        st.divider()
 
 if __name__ == "__main__":
     main()
